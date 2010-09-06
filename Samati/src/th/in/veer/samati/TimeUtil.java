@@ -27,7 +27,7 @@ public class TimeUtil {
 
     public static String hourMinSec(long sec) {
         long min = (sec / 60) % 60;
-        long hour = min / 60;
+        long hour = (sec / 60) / 60;
         sec = sec % 60;
         String minTxt = padZero(Long.toString(min));
         String secTxt = padZero(Long.toString(sec));
