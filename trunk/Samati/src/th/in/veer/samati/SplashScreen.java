@@ -34,10 +34,7 @@ public class SplashScreen extends Form implements CommandListener {
         super("Samati");
         this.controller = controller;
         infoItem = new StringItem("Samati", "Copyright (C) 2010 Vee Satayamas\n\n"
-                + "Version 0.0.1\n\n"
-                + "Buzz sound is available under a "
-                + "Creative Commons Sampling Plus 1.0 License. "
-                + "Copyright (C) 2010 Nick Oakman.");
+                + "Version 0.1.0\n");
         append(infoItem);
 
         okCommand = new Command("OK", Command.OK, 1);

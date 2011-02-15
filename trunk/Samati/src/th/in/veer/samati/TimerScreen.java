@@ -19,7 +19,6 @@ public class TimerScreen extends Form implements CommandListener {
     private SamatiController controller;
     private StringItem statusItem;
     private StringItem timeItem;
-    private StringItem roundCountItem;
     private StringItem accumulatedWorkTimeItem;
     private StringItem pomodoroCountItem;
 //    private Command exitCommand;
@@ -35,9 +34,6 @@ public class TimerScreen extends Form implements CommandListener {
         append(statusItem);
         timeItem = new StringItem("Time", "00:00");
         append(timeItem);
-
-        roundCountItem = new StringItem("Pomodoro", "0");
-        append(roundCountItem);
 
         accumulatedWorkTimeItem = new StringItem("Accumulated work", "00:00:00");
         append(accumulatedWorkTimeItem);
